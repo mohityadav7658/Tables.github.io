@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        td {
+            height: 14px;
+            font-size: 1.3vw;
+        }
+
+        .rg {
+            font-size: 30px;
+        }
+
+        :disabled {
+            font-size: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="font-size:2vw;" align="center">Registration application form for course - O level</h1>
+    <table style="height:2px; width: 100%;" align="center" border="1" width="90%" cellpadding="1px" cellspacing="0px" >
+        <tr>
+            <td id="rg" colspan="3" style="font-size: 1.4vw; background-color: rgb(64, 200, 242); color: white;">
+                <b>1.Registration Form</b></td>
+        </tr>
+        <tr>
+            <td>1.0</td>
+            <td>Have You got online reference number for enrolment with NIELIT/Accerditation/Extension Center</td>
+            <td>
+                <form>
+                    <label>
+                        <input style="height: 15px;" name="y" type="radio">yes
+                        <input style="height: 15px;" name="y" type="radio">No
+                    </label>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                1.1
+            </td>
+            <td>
+                Registration Sought for
+            </td>
+            <td>
+                <select id="disable" disabled>
+                    <option>O Level</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                1.2
+            </td>
+            <td>
+                Applied As
+            </td>
+            <td>
+                <form>
+                    <label>
+                        <input style="height: 15px;" name="y" type="radio">Direct Candidate
+                        <input style="height: 15px;" name="y" type="radio">throug Institute
+                    </label>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                1.3
+            </td>
+            <td>
+                Exam Cycle
+            </td>
+            <td id="ro">
+                <input type="text" value="july,2022" readonly style="font-size:90%;">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                1.4</td>
+            <td>
+                Registration Fee will be paid by ?
+            </td>
+            <td>
+                <select id="disable" disabled>
+                    <option>Candidate Direct to NIELIT</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td id="rg" colspan="3" style="font-size: 1.4vw; background-color: rgb(64, 200, 242); color: white;">
+                <b>2.Applicant's Personal Details</b></td>
+        </tr>
+        <tr>
+            <td>
+                2.1
+            </td>
+            <td>
+                Applicant's Full name
+            </td>
+            <td id="select">
+                <select style="font-size:90%;">
+                    <option value="">--Select--</option>
+                    <option value="">Mr.</option>
+                    <option value="">Ms.</option>
+                    <option value="">Others</option>
+                </select>
+                <input style="height: 50%;" type="text" size="10px">
+            </td>
+
+        </tr>
+        <tr>
+            <td>
+                2.2
+            </td>
+            <td>
+                Care of
+            </td>
+            <td>
+                <form>
+                    <label>
+                        <input style="height: 15px;" name="y" type="radio">Parents
+                        <input style="height: 15px;" name="y" type="radio">Guardian
+                    </label>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                2.2.1
+            </td>
+            <td>
+                Father's Name
+            </td>
+            <td>
+                <select id="disable" disabled>
+                    <option>Mr.</option>
+                </select>
+                <input style="height: 50%;" type="text" size="10%">
+            </td>
+
+        </tr>
+        <tr>
+            <td>
+                2.2.2
+            </td>
+            <td>
+                Mother's Name
+            </td>
+            <td>
+                <select id="disable" disabled>
+                    <option>Ms.</option>
+                </select>
+                <input style="height: 50%;" type="text" size="10%">
+            </td>
+
+        </tr>
+        <tr>
+            <td>
+                2.3</td>
+            <td>
+                Gender
+            </td>
+            <td>
+                <form>
+                    <label>
+                        <input style="height: 15px;" name="y" type="radio">Male
+                        <input style="height: 15px;" name="y" type="radio">Female
+                        <input style="height: 15px;" name="y" type="radio">Others
+                    </label>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                2.4
+            </td>
+            <td>
+                Date of Birth
+            </td>
+            <td>
+                <input style=" height: 2vw;" type="date" name="" id="">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                2.5
+            </td>
+            <td>
+                Marital Status
+            </td>
+            <td id="select">
+                <select style="font-size:90%;">
+                    <option value="">--Select--</option>
+                    <option value="">Single</option>
+                    <option value="">Married</option>
+                    <option value="">Divorced</option>
+                    <option value="">Widowed</option>
+                </select>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+                2.6
+            </td>
+            <td>
+                Category
+            </td>
+            <td id="select">
+                <select style="font-size:90%;">
+                    <option value="">--Select--</option>
+                    <option value="">General</option>
+                    <option value="">OBC</option>
+                    <option value="">SC</option>
+                    <option value="">ST</option>
+                </select>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+                2.7
+            </td>
+            <td>
+                Handicapped
+            </td>
+            <td>
+                <form>
+                    <label>
+                        <input style="height: 15px;" name="y" type="radio">No
+                        <input style="height: 15px;" name="y" type="radio">Yes
+                    </label>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                2.8
+            </td>
+            <td>
+                Ex-Serviceman
+            </td>
+            <td>
+                <form>
+                    <label>
+                        <input style="height: 15px;" name="y" type="radio">No
+                        <input style="height: 15px;" name="y" type="radio">Yes
+                    </label>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                2.9
+            </td>
+            <td>
+                EWS
+            </td>
+            <td>
+                <form>
+                    <label>
+                        <input style="height: 15px;" name="y" type="radio">No
+                        <input style="height: 15px;" name="y" type="radio">Yes
+                    </label>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                2.10
+            </td>
+            <td>
+                Religion
+            </td>
+            <td id="select">
+                <select style="font-size:90%;">
+                    <option value="">--Select--</option>
+                    <option value="">Hindu</option>
+                    <option value="">Muslim</option>
+                    <option value="">Jain</option>
+                    <option value="">Christianity</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td id="rg" colspan="3" style="font-size: 1.4vw; background-color: rgb(18, 115, 145); color: white;">
+                <b>3.Contact Details</b></td>
+        </tr>
+        <tr>
+            <td>3.1</td>
+            <td>Mobile Number</td>
+            <td><input type="text" height="10%"></td>
+        </tr>
+        <tr>
+            <td>3.2</td>
+            <td>Email-id</td>
+            <td><input type="text" height="10%"></td>
+        </tr>
+        <tr>
+            <td>3.3</td>
+            <td>Address line-1</td>
+            <td><input type="text" height="10%"></td>
+        </tr>
+        <tr>
+            <td>3.4</td>
+            <td>Address line-2</td>
+            <td><input type="text" height="10%"></td>
+        </tr>
+        <tr>
+            <td>3.5</td>
+            <td>City</td>
+            <td><input cellspacing="2px" type="text" height="10%"></td>
+        </tr>
+        <tr>
+            <td>3.6</td>
+            <td>State</td>
+            <td id="select">
+                <select style="font-size:90%;">
+                    <option value="">--Select--</option>
+                    <option value="">Andhra Pradesh</option>
+                    <option value="">Arunachal Pradesh</option>
+                    <option value="">Assam</option>
+                    <option value="">Bihar</option>
+                    <option value="">Chhattisgarh</option>
+                    <option value="">Goa</option>
+                    <option value="">Gujarat</option>
+                    <option value="">Haryana</option>
+                    <option value="">Himachal Pradesh</option>
+                    <option value="">Jharkhand</option>
+                    <option value="">Karnataka</option>
+                    <option value="">Kerala</option>
+                    <option value="">Madhya Pradesh</option>
+                    <option value="">Maharashtra</option>
+                    <option value="">Manipur</option>
+                    <option value="">Meghalaya</option>
+                    <option value="">Mizoram</option>
+                    <option value="">Nagaland</option>
+                    <option value="">Odisha</option>
+                    <option value="">Punjab</option>
+                    <option value="">Rajasthan</option>
+                    <option value="">Sikkim</option>
+                    <option value="">Tamil Nadu</option>
+                    <option value="">Telangana</option>
+                    <option value="">Tripura</option>
+                    <option value="">Uttar Pradesh</option>
+                    <option value="">Uttarakhand</option>
+                    <option value="">Gairsain</option>
+                    <option value="">West Bengal</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>3.7</td>
+            <td>Pincode</td>
+            <td><input cellspacing="2px" type="text" height="50%"></td>
+        </tr>
+        <tr>
+            <td id="rg" colspan="4" style="font-size: 1.4vw; background-color: rgb(18, 115, 145); color: white;"><b>4.
+                    Educational / Qualification Details</b></td>
+        </tr>
+        <tr>
+            <td>4.1</td>
+            <td>Highest Educational Qualification</td>
+            <td id="select">
+                <select style="font-size:90%;">
+                    <option value="">--Select--</option>
+                    <option value="">10th</option>
+                    <option value="">12th</option>
+                    <option value="">Graduate</option>
+                    <option value="">Post Graduate</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>4.2</td>
+            <td>Year Of Passing</td>
+            <td><input cellspacing="2px" type="text" height="50%"></td>
+        </tr>
+        <tr>
+            <td id="rg" colspan="4" style="font-size: 1.4vw; background-color: rgb(18, 115, 145); color: white;"><b>5.
+                    Identification Details</b></td>
+        </tr>
+        </tr> </b></td>
+        </tr>
+        <tr>
+            <td>4.1</td>
+            <td>Aadhar Card Number</td>
+            <td><input cellspacing="2px" type="text" height="50%"></td>
+        </tr>
+        <td>5.2</td>
+        <td>Upload Photo</td>
+        <td><input style="font-size: 100%;" cellspacing="2px" type="file" height="50%"></td>
+        <tr>
+            <td colspan="3px" id="rg" colspan="4"
+                style="font-size: 1.4vw; background-color: rgb(246, 251, 252); color: white;">
+                <center><input style=font-size:1.5vw; type="submit" name="" id=""><input style=font-size:1.5vw; type="reset" value="Back"></center>
+            </td>
+        </tr>
+    </table>
+
+</body>
+
+</html>
